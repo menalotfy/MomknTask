@@ -36,9 +36,7 @@ namespace Momkn.Infrastructure.Data
             catch (Exception)
             {
             }
-            if (!_db.Roles.Any(r => r.Name == "Admin"))
-                _roleManager.CreateAsync(new IdentityRole("Admin")).GetAwaiter().GetResult();
-
+         
 
 
 
@@ -61,7 +59,8 @@ namespace Momkn.Infrastructure.Data
             if (!context.Users.Any())
             {
                 context.AddRange(
-                    new ApplicationUser { FullName = "admin",Email= "admin@gmail.com", PasswordHash = "AQAAAAEAACcQAAAAEFCYfcpF2yflTphJrmOgl6/Xz8XaFRkOOme1CMx9YHKE9N2u4TUzpcPLr8doAy3HqQ==",SecurityStamp= "fd3e9482-dd26-4e50-9ac7-b0ec45378c85", UserName= "admin@gmail.com", CreatedDate = DateTime.Now, IsDeleted = false }
+                    //password=Abc_123456
+                    new ApplicationUser { FullName = "admin",Email= "admin@gmail.com", PasswordHash = "AQAAAAEAACcQAAAAEFCYfcpF2yflTphJrmOgl6/Xz8XaFRkOOme1CMx9YHKE9N2u4TUzpcPLr8doAy3HqQ==", UserName= "admin@gmail.com", CreatedDate = DateTime.Now, IsDeleted = false }
               
                     );
                 context.SaveChanges();

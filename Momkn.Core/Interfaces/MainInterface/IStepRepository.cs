@@ -9,6 +9,6 @@ namespace Momkn.Core.Interfaces.MainInterface
 {
     public interface IStepRepository : IRepository<Step>
     {
-       
+        List<Step> getAllSteps();
     }
 }

@@ -25,8 +25,7 @@ namespace Momkn.Infrastructure.Data
         public DbSet<Step> Steps { get; set; }
         public DbSet<Item> Items { get; set; }
         public DbSet<ApplicationUserToken> ApplicationUserTokens { get; set; }
-        public DbSet<FirebaseUserToken> FirebaseUserTokens { get; set; }
-        public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
+  
     
 
      

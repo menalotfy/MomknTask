@@ -9,6 +9,5 @@ namespace Momkn.Core.DTOs
         public string accessToken { get; set; }
         public string refreshToken { get; set; }
         public DateTime expiresIn { get; set; }
-        public UserViewModel userData { get; set; }
     }
 }

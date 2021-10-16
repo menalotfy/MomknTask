@@ -25,10 +25,9 @@ namespace Momkn.API.Areas.API.Controllers.MainControllers
             
         }
         [HttpGet]
-      
         public IActionResult GetAllSteps()
         {
-            List<Step> steps = _dbContext.GetAll().OrderBy(x => x.Number).ToList();
+            List<Step> steps = _dbContext.getAllSteps().OrderBy(x => x.Number).ToList();
 
             return Ok(ResponseHelper.Success(data:steps));
         }

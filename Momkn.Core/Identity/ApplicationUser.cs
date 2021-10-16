@@ -20,8 +20,6 @@ namespace Momkn.Core.Identity
   
         public DateTime? CreatedDate { get; set; }
 
-        [NotMapped]
-        public string RoleName { get; set; }
        
        
 
