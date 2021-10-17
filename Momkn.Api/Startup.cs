@@ -135,7 +135,7 @@ namespace Momkn.Api
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TeleMedicine.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Momkn.API", Version = "v1" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
                     Description = "JWT Authorization header {token}",
